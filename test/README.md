@@ -2,8 +2,8 @@
 Project is designed to test provided functions based on **Mocha** test framework running on **Node.js**.
 There are two main folders to refer to:
 
-*[Functions](test/index.spec.js)
-*[Tests](index.js)
+*[Functions](mochaa/test/index.spec.js)
+*[Tests](mochaa/index.js)
 
 
 **Important:**

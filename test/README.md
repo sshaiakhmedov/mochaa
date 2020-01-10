@@ -1,14 +1,15 @@
 # Unit testing on Node.js
 ## Mocha framework, Chai assertion library
 
-Project is designed to run _Unit testing_  on functions from _index.js_ file based on **Mocha** test framework running on **Node.js**.
-There are two main files to refer to when it comes to Functions and Tests code checking given functions:
+Project is designed to run _Unit testing_  on functions from _index.js_ file based on **Mocha** test framework running on **Node.js**. 
+There are two main files below to refer to when it comes to Functions and Tests code checking given functions:
 
-### [Functions](https://github.com/sshaiakhmedov/mochaa/blob/master/index.js)
-Here you can see the functions.
+* ### [Functions](https://github.com/sshaiakhmedov/mochaa/blob/master/index.js)
+Here you can see the functions blocks.
 
-### [Tests](https://github.com/sshaiakhmedov/mochaa/blob/master/test/index.spec.js)
-That is where all the corresponding unit tests are located with from built-in mocha and chai libraries.
+* ### [Tests](https://github.com/sshaiakhmedov/mochaa/blob/master/test/index.spec.js)
+That is where all the corresponding Unit tests are located which are using  _node, mocha_ and _chai_ libraries.
+
 
 **Important to Start:**
 

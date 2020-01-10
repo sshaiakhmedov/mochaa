@@ -3,7 +3,7 @@ Project is designed to test provided functions based on **Mocha** test framework
 There are two main folders to refer to:
 
 *[Functions](index.js)
-*[Tests](test/index.spec.js)
+*[Tests](https://github.com/sshaiakhmedov/mochaa/blob/master/test/index.spec.js)
 
 
 **Important:**

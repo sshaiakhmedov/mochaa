@@ -36,17 +36,21 @@ describe('define is the person Adult or not', () => {
     expect(isAdult('er')).false;
   });
 });
+
 /*This Unit test is given a random array arr of numbers or string charters.
 It shall return the same array sorted in alphabetical or numbers in ascending order.
 If any element in array is empty==undefined function shall throw 'Error'*/
-
-it('function shall return array sorted in alphabetical order(a-z) or numbers in ascending order(0-9)', () => {
-  assert.deepEqual(sortAtoB(['b', 's', 'e', 'z', 'f']), ['b', 'e', 'f', 's', 'z']);
-  assert.deepEqual(sortAtoB([4, 3, 2, 1, 5]), [1, 2, 3, 4, 5]);
-  /* assert.deepStrictEqual(sortAtoB([,3,2,1,5]), undefined, Error); //cant find the right assertion method for Error*/
-  expect(sortAtoB(['b', 's', 'e', 'z', 'f'])).deep.equal(['b', 'e', 'f', 's', 'z']);
-  expect(sortAtoB([5, 4, 2, 6])).deep.equal([2, 4, 5, 6]);
-  expect(sortAtoB([, 2, 4, 1, 5, 3]).false);
+describe('define is the person Adult or not', () => {
+  it('function shall return array sorted in alphabetical order(a-z)', () => {
+    assert.deepEqual(sortAtoB(['b', 's', 'e', 'z', 'f']), ['b', 'e', 'f', 's', 'z']);
+    expect(sortAtoB(['b', 's', 'e', 'z', 'f'])).deep.equal(['b', 'e', 'f', 's', 'z']);
+  });
+  it('function shall return array sorted in alphabetical order(a-z)', () => {
+    assert.deepEqual(sortAtoB([4, 3, 2, 1, 5]), [1, 2, 3, 4, 5]);
+    /* assert.deepStrictEqual(sortAtoB([,3,2,1,5]), undefined, Error); //cant find the right assertion method for Error*/
+    expect(sortAtoB([5, 4, 2, 6])).deep.equal([2, 4, 5, 6]);
+    expect(sortAtoB([, 2, 4, 1, 5, 3]).false);
+  });
 });
 
 describe('define is the word palindrom', () => {

@@ -3,16 +3,15 @@ function sum (a, b){
 }
 
 function prod (a, b){
-    return a * b;
+    return (typeof a=='number' && typeof b=='number')? a*b : "Use only numbers";
 }
+
 module.exports = {sum, prod, isEven, isAdult, sortAtoB, isPalindrome, oddNumber};
 
 /*The function is given a random array arr of numbers .
 It shall return a new array arrEven with even numbers only from arr array.*/
 function isEven (arr){
-    let arrEven=[];
-    arrEven=arr.filter(el=>el%2==0);
-    return arrEven;
+   return arr.filter(el=>el%2===0);
 }
 /*Function assess an input c for entries as:
 <0 value
@@ -33,7 +32,7 @@ function sortAtoB (arr) {
 function isPalindrome (word) {
     return word.split('').reverse().join('')===word? true : false;
 }
-
+//The functions receives a value and test: if it is Odd return true and vise versa
 function oddNumber (num) {
-    return num%2!==0? true : false;
+    return (typeof num!=='string' && num%2!==0)? true : false;
 }

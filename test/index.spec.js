@@ -15,10 +15,13 @@ describe('function sum',()=>{
 
 it('should function prod equals 15', ()=>{
     assert.equal(prod(3,5),15);
+    expect(prod(4,3)).equal(12);
+    // expect(prod('t',2).equal("Use only numbers")
 });
 
 it('function shall return new array with even number', ()=>{
     assert.deepEqual(isEven ([4,52,35,6]), [4,52,6]);
+    // expect(isEven([2,4,'t',6,'tr',3]).deep.equal([2,4,6]))
 });
 
 /*The Unit test assess the input c for entries as:
@@ -41,29 +44,36 @@ If any element in array is empty==undefined function shall throw 'Error'*/
 it('function shall return array sorted in alphabetical order(a-z) or numbers in ascending order(0-9)', ()=> {
     assert.deepEqual(sortAtoB(['b', 's', 'e','z','f']), ['b','e','f','s','z']);
     assert.deepEqual(sortAtoB([4,3,2,1,5]), [1,2,3,4,5]);
-    assert.deepStrictEqual(sortAtoB([,3,2,1,5]), undefined, Error); //cand find the right assertion method for Error
-    expect(sortAtoB(['b', 's', 'e','z','f'])).deep.equal(['b','e','f','s','z'])
+   /* assert.deepStrictEqual(sortAtoB([,3,2,1,5]), undefined, Error); //cant find the right assertion method for Error*/
+    expect(sortAtoB(['b', 's', 'e','z','f'])).deep.equal(['b','e','f','s','z']);
+    // expect(sortAtoB([,,4,2]).messageerror)
+    // expect(sortAtoB([5,3,2,7,3])).deep.equal([2,3,3,5,7])
 });
 
 describe('define is the word palindrom',()=> {
     it('function shall assess is the given word palindrome returning true', () => {
-        assert.deepEqual(isPalindrome('nadan'), true)
+        assert.deepEqual(isPalindrome('nadan'), true);
+        expect(isPalindrome('mamam')).true;
     });
 
     it('function shall assess is the given string not palindrome returning false', () => {
-        assert.equal(isPalindrome('dadae'), false)
+        assert.equal(isPalindrome('dadae'), false);
+        expect(isPalindrome('dadss')).false;
     });
 
 });
 
 describe('is the given number odd or not (true or false)',()=> {
     it('function shall assert is the given number Odd - return true', () => {
-        assert.equal(oddNumber(5), true)
+        assert.equal(oddNumber(5), true);
+        expect(oddNumber(11)).true;
+
     });
 
     it('function shall assert is the given number Odd-return false', () => {
         assert.equal(oddNumber (6), false);
         expect(oddNumber(6)).false;
+        expect(oddNumber('t')).false;
     });
 
 });

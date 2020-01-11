@@ -46,8 +46,7 @@ it('function shall return array sorted in alphabetical order(a-z) or numbers in 
     assert.deepEqual(sortAtoB([4,3,2,1,5]), [1,2,3,4,5]);
    /* assert.deepStrictEqual(sortAtoB([,3,2,1,5]), undefined, Error); //cant find the right assertion method for Error*/
     expect(sortAtoB(['b', 's', 'e','z','f'])).deep.equal(['b','e','f','s','z']);
-    // expect(sortAtoB([,,4,2]).messageerror)
-    // expect(sortAtoB([5,3,2,7,3])).deep.equal([2,3,3,5,7])
+    expect(sortAtoB([5,4,2,6])).deep.equal([2,4,5,6]);
 });
 
 describe('define is the word palindrom',()=> {
@@ -74,6 +73,7 @@ describe('is the given number odd or not (true or false)',()=> {
         assert.equal(oddNumber (6), false);
         expect(oddNumber(6)).false;
         expect(oddNumber('t')).false;
+
     });
 
 });

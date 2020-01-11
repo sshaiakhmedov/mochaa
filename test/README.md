@@ -13,12 +13,18 @@ That is where all the corresponding Unit tests are located which are using  _nod
 
 **Important to Start:**
 
-1. Follow  https://nodejs.org/en/ to install and set **Node.js** environment.
+1. Follow https://nodejs.org/en/ to install and set **Node.js** environment.
 2. Follow https://mochajs.org/ to install Mocha framework to be able to use  Node.js' built-in assert module.
 _Unit test are performed using mocha library._
 
 3. Follow https://www.chaijs.com/ to use BDD / TDD assertion library. 
 _Unit tests are performed using chai **Expect the BDD style.**_
+
+4. Follow https://eslint.org/docs/user-guide/getting-started and Terminal in WebStorm type:
+_npm install eslint --save-dev_
+_$ npx eslint --init_
+
+5.
 
 #### Note:
 if while creating git repository from WebStorm you pushed _node_modules_ and _.idea_ files,
